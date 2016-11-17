@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>USER</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+    <h1 class="logo">COUNTRIFY</h1>
+
+    <div class="main-nav">
+      <ul>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CAREER</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav>
+    <ul id="nav">
+      <li><a class="selected" id="au" href="#">AUSTRALIA</a></li>
+      <li><a id="br" href="#">BRAZIL</a></li>
+      <li><a id="ca" href="#">CANADA</a></li>
+      <li><a id="fr" href="#">FRANCE</a></li>
+      <li><a id="us" href="#">UNITED STATES</a></li>
+    </ul>
+    <div class="clear"></div>
+  </nav>
+
+  <h1 id="country" class="country-title"> <!-- insert page title base on country selected --> </h1>
+
+  <section id="cards">
+      <!-- CARDS GO HERE -->
+  </section>
+
+
+  <!-- CARD TEMPLATE -->
+  <script type="text/x-handlebars-template" id="user_template">
+    <figure class="card clearfix">
+        <img src="{{ user_image }}"/>
+        <figcaption class="clearfix">
+            <ul>
+              <li>Name: {{ first_name }} {{ last_name }}</li>
+              <li>Email: {{ user_email }}</li>
+              <li>Phone: {{ user_phone }}</li>
+              <li>Address: {{ user_street }}, {{ user_city }}, {{ user_postcode }}, {{ user_state }}</li>
+            </ul>
+        </figcaption>
+        <button>VIEW PROFILE</button>
+    </figure>
+  </script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="handlebars-v4.0.5.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript">
+    //START THE APP
+    $(document).ready(function () {
+
+    });
+  </script>
+</body>
