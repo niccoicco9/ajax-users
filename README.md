@@ -2,7 +2,7 @@
 
 This project uses AJAX to requests random users from the [Random User Generator API](https://randomuser.me/) and inserts them into the webpage. The users are categorized based on their country of origin.
 
-[![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/countrify.png)]()
+![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/countrify.png)
 
 ## Handlebars.js Template
 
