@@ -14,7 +14,7 @@ body {
 }
 
 .top-bar {
-  background-color: #ef5350;
+  background-color: #ef5350;;
   height: 60px;
   left: 0;
   position: fixed;
@@ -45,25 +45,26 @@ body {
   }
 }
 
-.country-title {
-  color: #ef5350;
-  display: block;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  padding: 120px 0 0 60px;
-}
-
 .logo {
   color: #ffffff;
   background-color: #263238;
   float: left;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 60px;
   text-align: center;
   text-decoration: none;
   width: 220px;
+}
+
+.country-title {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 60px;
+  padding-left: 50px;
 }
 
 
@@ -92,7 +93,7 @@ nav {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 20px 0 20px 60px;
+    padding: 20px 20px 20px 40px;
     text-decoration: none;
     width: 160px;
 
@@ -113,8 +114,11 @@ nav {
 
 
 /* USER CARD ============================================ */
+.cards {
+  padding: 100px 0 0 40px;
+}
+
 #cards {
-  padding: 30px 0 0 60px;
 
   & button {
     background-color: #ef5350;
@@ -138,11 +142,13 @@ nav {
 
   & .card {
     background-color: #ECEFF1;
+    border-bottom: 10px solid #ef5350;
     border-radius: 2px;
     display: block;
     float: left;
-    margin: 0 60px 60px 0;
+    margin: 0 40px 40px 0;
     padding: 25px;
+    transition: all .3s;
     width: 400px;
 
     & img {
@@ -158,8 +164,20 @@ nav {
     & ul li {
       color: #263238;
       font-size: 12px;
-      margin: 0 0 15px 25px;
-      text-transform: uppercase;
+      line-height: 18px;
+      margin: 0 0 10px 25px;
+      text-transform: capitalize;
+
+      & span {
+        font-weight: 800;
+      }
     }
+  }
+
+  & .card:hover {
+    border-bottom: 10px solid #263238;
+    // box-shadow: 0px 6px 16px rgba(#000, .2), 0px 6px 16px rgba(#000, .2);
+    cursor: pointer;
+    transform: scale(1.05);
   }
 }

@@ -13,12 +13,7 @@
     <h1><a class="logo" href="#">COUNTRIFY</a></h1>
 
     <div class="main-nav">
-      <ul>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CAREER</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
+      <h1 id="country" class="country-title">AUSTRALIA <!-- insert page title base on country selected --> </h1>
     </div>
   </div>
 
@@ -33,9 +28,9 @@
     <div class="clear"></div>
   </nav>
 
-  <h1 id="country" class="country-title">AUSTRALIA <!-- insert page title base on country selected --> </h1>
 
-  <section id="cards">
+
+  <section id="cards" class="cards">
       <!-- CARDS GO HERE -->
   </section>
 
@@ -43,16 +38,15 @@
   <!-- CARD TEMPLATE -->
   <script type="text/x-handlebars-template" id="user_template">
     <figure class="card clearfix">
-        <img src="{{ user_image }}"/>
-        <figcaption class="clearfix">
-            <ul>
-              <li>Name: {{ first_name }} {{ last_name }}</li>
-              <li>Email: {{ user_email }}</li>
-              <li>Phone: {{ user_phone }}</li>
-              <li>Address: {{ user_street }}, {{ user_city }}, {{ user_postcode }}, {{ user_state }}</li>
-            </ul>
-        </figcaption>
-        <button>VIEW PROFILE</button>
+      <img src="{{ user_image }}"/>
+      <figcaption class="clearfix">
+          <ul>
+            <li><span>Name:</span> {{ first_name }} {{ last_name }}</li>
+            <li><span>Email:</span> {{ user_email }}</li>
+            <li><span>Phone:</span> {{ user_phone }}</li>
+            <li><span>Address:</span> {{ user_street }}, {{ user_city }}, {{ user_postcode }}, {{ user_state }}</li>
+          </ul>
+      </figcaption>
     </figure>
   </script>
 

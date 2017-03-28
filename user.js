@@ -83,8 +83,6 @@
         this.createCards(nat);
       }.bind(this));
     },
-      // .done((this.createCards).bind(this));
-
 
 
     // GET DATA FROM THE REQUEST AND RUN createUserCard()

@@ -80,24 +80,25 @@ body {
       .top-bar .main-nav ul li a:hover {
         background-color: #e53935; }
 
-.country-title {
-  color: #ef5350;
-  display: block;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  padding: 120px 0 0 60px; }
-
 .logo {
   color: #ffffff;
   background-color: #263238;
   float: left;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 60px;
   text-align: center;
   text-decoration: none;
   width: 220px; }
+
+.country-title {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 60px;
+  padding-left: 50px; }
 
 /* NAVIGATION ============================================ */
 nav {
@@ -119,7 +120,7 @@ nav {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 20px 0 20px 60px;
+    padding: 20px 20px 20px 40px;
     text-decoration: none;
     width: 160px; }
     nav ul li a:hover {
@@ -130,42 +131,52 @@ nav {
 
 /* BUTTON ============================================ */
 /* USER CARD ============================================ */
-#cards {
-  padding: 30px 0 0 60px; }
-  #cards button {
-    background-color: #ef5350;
-    border: 0px;
+.cards {
+  padding: 100px 0 0 40px; }
+
+#cards button {
+  background-color: #ef5350;
+  border: 0px;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 15px 0;
+  width: 150px; }
+  #cards button:hover {
+    background-color: #e53935;
+    transition: all .3s; }
+#cards .card {
+  background-color: #ECEFF1;
+  border-bottom: 10px solid #ef5350;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  margin: 0 40px 40px 0;
+  padding: 25px;
+  transition: all .3s;
+  width: 400px; }
+  #cards .card img {
     border-radius: 2px;
-    color: #ffffff;
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    padding: 15px 0;
-    width: 150px; }
-    #cards button:hover {
-      background-color: #e53935;
-      transition: all .3s; }
-  #cards .card {
-    background-color: #ECEFF1;
-    border-radius: 2px;
-    display: block;
     float: left;
-    margin: 0 60px 60px 0;
-    padding: 25px;
-    width: 400px; }
-    #cards .card img {
-      border-radius: 2px;
-      float: left;
-      width: 150px; }
-    #cards .card ul {
-      margin-left: 140px; }
-    #cards .card ul li {
-      color: #263238;
-      font-size: 12px;
-      margin: 0 0 15px 25px;
-      text-transform: uppercase; }
+    width: 150px; }
+  #cards .card ul {
+    margin-left: 140px; }
+  #cards .card ul li {
+    color: #263238;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 10px 25px;
+    text-transform: capitalize; }
+    #cards .card ul li span {
+      font-weight: 800; }
+#cards .card:hover {
+  border-bottom: 10px solid #263238;
+  cursor: pointer;
+  transform: scale(1.05); }
 
 /*# sourceMappingURL=style.css.map */
