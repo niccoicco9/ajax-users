@@ -1,6 +1,6 @@
 # Countrify
 
-This project uses AJAX to request random users from the [Random User Generator API](https://randomuser.me/) and inserts them into the webpage. The users are categorized based on their country of origin.
+This project uses AJAX to request random users from the [Random User Generator API](https://randomuser.me/) and display them on the webpage. The users are categorized based on their country of origin.
 
 ![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/countrify.png)
 
