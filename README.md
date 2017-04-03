@@ -2,7 +2,7 @@
 
 This project uses AJAX to request random users from the [Random User Generator API](https://randomuser.me/) and display them on the webpage. The users are categorized based on their country of origin.
 
-![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/countrify.png)
+[![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/screenshot.png)](https://thaitwo.github.io/ajax-users/)
 
 ## Handlebars.js Template
 
@@ -22,6 +22,6 @@ In this case, on the command line go to the root directory. Then type in the fol
 sass --watch scss:css
 ```
 
-## Running App Locally
+## Run App Locally
 
 To run the app locally, simply go to your root directory via your desktop (not command line) and double click on the **index.html** file. This should open a window on your browser displaying the app webpage.
