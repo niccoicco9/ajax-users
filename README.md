@@ -1,8 +1,12 @@
-# Countrify
+# Random Users
 
-This project uses AJAX to request random users from the [Random User Generator API](https://randomuser.me/) and display them on the webpage. The users are categorized based on their country of origin.
+This project uses AJAX to request random users from the [Random User Generator API](https://randomuser.me/) and displays them on the webpage, categorized based on their country of origin.
 
-[![countrify](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/screenshot.png)](https://thaitwo.github.io/ajax-users/)
+## View Project
+
+[View Project](https://thaitwo.github.io/ajax-users/ "Random Users")
+
+[![Random User Ajax](https://raw.githubusercontent.com/thaitwo/ajax-users/master/assets/screenshot.png)](https://thaitwo.github.io/ajax-users/)
 
 ## Handlebars.js Template
 
