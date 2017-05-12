@@ -14,7 +14,9 @@ body {
 }
 
 .top-bar {
-  background-color: #ef5350;;
+  background-image: linear-gradient(to right, $pink 0%, $purple 100%);
+  background-image: -webkit-linear-gradient(to right, $pink 0%, $purple 100%);
+  background-image: -moz-linear-gradient(to right, $pink 0%, $purple 100%);
   height: 60px;
   left: 0;
   position: fixed;
@@ -24,37 +26,19 @@ body {
 
   & .main-nav {
     display: inline-block;
-
-    & ul li {
-      float: left;
-    }
-
-    & ul li a {
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      line-height: 60px;
-      padding: 23px 35px;
-      text-decoration: none;
-
-      &:hover {
-        background-color: #e53935;
-      }
-    }
   }
 }
 
 .logo {
-  color: #ffffff;
-  background-color: #263238;
+  color: $white;
+  background-color: $bluegrey-900;
   float: left;
   font-size: 24px;
   font-weight: 800;
   line-height: 60px;
   text-align: center;
   text-decoration: none;
-  width: 220px;
+  width: 200px;
 }
 
 .country-title {
@@ -64,18 +48,18 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 60px;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 
 /* NAVIGATION ============================================ */
 nav {
-  background-color: #37474F;
+  background-color: $bluegrey-800;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0px;
-  width: 220px;
+  width: 200px;
   z-index: 10;
 
   & ul {
@@ -88,22 +72,22 @@ nav {
   }
 
   & ul li a {
-    color: #607D8B;
+    color: $bluegrey-500;
     float: left;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 30px;
     text-decoration: none;
-    width: 160px;
+    width: 150px;
 
     &:hover {
-      background-color: #263238;
+      background-color: $bluegrey-900;
     }
 
     &.selected {
-      background-color: #263238;
-      color: #ffffff;
+      background-color: $bluegrey-900;
+      color: $white;
     }
   }
 
@@ -115,34 +99,14 @@ nav {
 
 /* USER CARD ============================================ */
 .cards {
-  padding: 100px 0 0 40px;
+  padding: 100px 0 0 20px;
 }
 
 #cards {
 
-  & button {
-    background-color: #ef5350;
-    border: 0px;
-    border-radius: 2px;
-    color: #ffffff;
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    padding: 15px 0;
-    width: 150px;
-
-    &:hover {
-      background-color: #e53935;
-      transition: all .3s;
-    }
-  }
-
   & .card {
-    background-color: #ECEFF1;
-    border-bottom: 10px solid #ef5350;
+    background-color: $bluegrey-50;
+    border-bottom: 10px solid $pink;
     border-radius: 2px;
     display: block;
     float: left;
@@ -162,7 +126,7 @@ nav {
     }
 
     & ul li {
-      color: #263238;
+      color: $bluegrey-900;
       font-size: 12px;
       line-height: 18px;
       margin: 0 0 10px 25px;
@@ -175,8 +139,7 @@ nav {
   }
 
   & .card:hover {
-    border-bottom: 10px solid #263238;
-    // box-shadow: 0px 6px 16px rgba(#000, .2), 0px 6px 16px rgba(#000, .2);
+    border-bottom: 10px solid $purple;
     cursor: pointer;
     transform: scale(1.05);
   }
